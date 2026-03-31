@@ -281,7 +281,7 @@ void explainSet() {
     auto it = st.find(6);  // Not found, so it points to st.end()
 
     // 3. ERASE: Removes elements from the set
-    st.erase(5); // Erases '5' if it exists (takes logarithmic time)
+   st.erase(5); // Erases '5' if it exists (takes logarithmic time)
 
     // 4. COUNT: Returns 1 if element exists, 0 if not (since elements are unique)
     int cnt = st.count(1); 
@@ -325,7 +325,7 @@ void explainMultiSet() {
     // ERASE RANGE: Erase multiple instances using iterators
     ms.erase(ms.find(1), next(ms.find(1), 2)); 
 }
-
+ 
 // ###############  UnorderedSet ######################################
 
 // An unordered_set stores unique elements, but they are not sorted (random order)

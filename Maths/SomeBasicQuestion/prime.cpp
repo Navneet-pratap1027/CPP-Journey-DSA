@@ -1,53 +1,51 @@
-// // #include<bits/stdc++.h>
-// // using namespace std;
+#include<bits/stdc++.h>
+using namespace std;
 
-// // void checkPrime(int n){
-// //     if(n<=1){
-// //         cout<<"false";
-// //         return;
-// //     }
-// //     for (int i=2;i<n;i++){
-// //         if(n%i==0){
-// //             cout<<"false";
-// //             return;
-// //         }
-// //     }
-// //     cout<<"true";
-// // }
-// // int main() {
-// //      int n; 
-// //     cin >> n;
-// //     checkPrime(n); // here copy of value n goes to function so, we can any other variable name instead of n we can use a, b, num etc
-// //     return 0;
-// // }
+void checkPrime(int n){
+    if(n<=1){
+        cout<<"false";
+        return;
+    }
+    for (int i=2;i<n;i++){
+        if(n%i==0){
+            cout<<"false";
+            return;
+        }
+    }
+    cout<<"true";
+}
+int main() {
+     int n; 
+    cin >> n;
+    checkPrime(n); // here copy of value n goes to function so, we can any other variable name instead of n we can use a, b, num etc
+    return 0;
+}
 
 // // ##############  Optimization of code ################################
 
-// // #include <iostream>
-// // using namespace std;
+#include <iostream>
+using namespace std;
+void checkPrime(int n) {
+    if (n <= 1) {
+        cout << "False";
+        return; 
+    }
+    for (int i = 2; i*i <= n; i++) { // check for only root value
+        if (n % i == 0) {
+            cout << "False"; 
+            return;          
+        }
+    }
+    cout << "True";
+}
+int main() {
+     int n; 
+    cin >> n;
+    checkPrime(n); 
+    return 0;
+}
 
-// // void checkPrime(int n) {
-// //     if (n <= 1) {
-// //         cout << "False";
-// //         return; 
-// //     }
-
-// //     for (int i = 2; i*i <= n; i++) { // check for only root value
-// //         if (n % i == 0) {
-// //             cout << "False"; 
-// //             return;          
-// //         }
-// //     }
-// //     cout << "True";
-// // }
-
-// // int main() {
-// //      int n; 
-// //     cin >> n;
-// //     checkPrime(n); 
-// //     return 0;
-// // }
-
+//#######################################################################################
 // #include <iostream>
 // using namespace std;
 // int nextPrime(int n) {
@@ -103,11 +101,4 @@ int main(){
     }
     return 0;
 }
-
-// #include<bits/stdc++.h>
-// using namespace std;
-
-// int main(){
-//     return 0;
-// }
 
